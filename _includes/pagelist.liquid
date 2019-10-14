@@ -1,0 +1,13 @@
+---
+layout: layout.liquid
+title: page list for each book
+---
+
+{{content}}
+<p>Filter this list by book:</p>
+<ul>
+    {% for page in collections.page %}
+    <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+    {% endfor %}
+   
+</ul>
