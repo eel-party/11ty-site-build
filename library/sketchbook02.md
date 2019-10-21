@@ -1,6 +1,6 @@
 ---
 layout: pagelist.liquid
-title: another sketchbook
+title: sketchbook 02
 tags: book
 ---
 
