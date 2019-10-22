@@ -5,41 +5,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>sketchbook 01</title>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
- -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" href="./css/base.css">
 </head>
 
-<body>
+<body class="helvetica near-black bg-washed-blue pa3">
     <header>
-        <ul class="nav">
+        <nav class="">
             
-            <li><a href="/">latewerks</a></li>
+            <a class="link dim gray    f6 f5-ns dib mr3" href="/">latewerks</a>
             
-            <li><a href="/about/">about</a></li>
+            <a class="link dim gray    f6 f5-ns dib mr3" href="/about/">about</a>
             
-            <li><a href="/library/">the library</a></li>
+            <a class="link dim gray    f6 f5-ns dib mr3" href="/library/">the library</a>
             
-        </ul>
+        </nav>
     </header>
-    <main>
-        <p>&#8592; navigation back to book</p>
-<!-- <li><a href="previousPageHref">lonk</a></li> -->
+    <main class="lh-copy">
+        <h1>sketchbook 01</h1>
+        <p><!-- <li><a href="previousPageHref">lonk</a></li> -->
 <!-- I keep referring to https://www.11ty.io/docs/pagination/ but so far have not had much luck -->
-<h2>sketchbook 01</h2>
-<img src="10-14-2019-02.jpg" style="max-width: 500px;" />
-<p>some description</p>
 
-<p>These are tags: ["page"]</p>
+<article class="">
+  <header class="fn fl-ns w-50-ns pr4-ns">
+    <h1 class="f2 lh-title fw9 mb3 mt0 pt3 bt bw2">
+        some description
+    </h1>
+    <h2 class="f3 mid-gray lh-title">
+      ["page"]
+    </h2>
+    <time class="f6 ttu tracked gray">Sometime before 1967</time>
+    <p>&#8592; navigation back to book</p>
 
-<p style="color: magenta;">other things:</p>
-<ul style="color: magenta;">
-    <li>revise title</li>
-</ul>
+  </header>
+  <div class="fn fl-ns w-50-ns">
+    <p class="f5 lh-copy measure mt0-ns">
+      <img src="10-14-2019-02.jpg" />
+    </p>
+    <p class="f5 lh-copy measure">
+      All typography consists of letters. These appear either in the form of a
+      smoothly running sentence or as an assembly of lines, which may even have
+      contrasting shapes. Good typog- raphy begins, and this is no minor
+      matter, with the typeset- ting of a single line of text in a book or a
+      newspaper. Using exactly the same typeface, it is possible to create either
+      a pleasant line, easily read, or an onerous one. Spacing, if it is too wide
+      or too compressed, will spoil almost any typeface.
+    </p>
+  </div>
+</article></p>
     </main>
-    
     <!-- <hr />
     <p style="color: magenta;">This is just to check that all of our pages are showing up.</p>
     <ul>
