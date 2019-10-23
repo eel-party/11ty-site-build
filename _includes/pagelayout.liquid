@@ -4,29 +4,33 @@ title: page layout
 ---
 <!-- <li><a href="previousPageHref">lonk</a></li> -->
 <!-- I keep referring to https://www.11ty.io/docs/pagination/ but so far have not had much luck -->
-<article class="">
-    <header class="bt bw2 fn fl-ns w-50-ns">
-        <h1 class="">
-            {{ description }}
-        </h1>
-        <h2 class="mid-gray">
-            {{ tags }}
-        </h2>
-        <time class="ttu tracked gray">{{ date }}</time>
-        {% for book in collections.book %}
-        {% if book.data.title == title %}
-        <a href="{{ book.url }}" class="no-underline black">
-            <p>&#8592; back to {{ book.data.title }}</p>
-        </a>
-        {% endif %}
-        {% endfor %}
-    </header>
-    <div class="fn fl-ns w-50-ns pl3-ns">
-        <p class="f5 lh-copy measure mt0-ns">
-            <img src="{{ image }}" />
-        </p>
-        <p class="f5 lh-copy measure">
-            {{ content }}
-        </p>
-    </div>
-</article>
+
+<!-- you broke it -->
+<section>
+    <article class="cf">
+        <header class="fl w-50 pt0 mt0 pr4">
+            <h1 class="bt bw2 pt3">
+                {{ description }}
+            </h1>
+            <h2>
+                {{ tags }}
+            </h2>
+            <time class="gray">{{ date }}</time>
+            {% for book in collections.book %}
+            {% if book.data.title == title %}
+            <a href="{{ book.url }}" class="no-underline black">
+                <p>&#8592; back to {{ book.data.title }}</p>
+            </a>
+            {% endif %}
+            {% endfor %}
+        </header>
+        <div class="fl w-50">
+            <p class="pt2">
+                <img src="{{ image }}" />
+            </p>
+            <p>
+                {{ content }}
+            </p>
+        </div>
+    </article>
+</section>
