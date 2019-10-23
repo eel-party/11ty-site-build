@@ -2,12 +2,25 @@
 layout: layout.liquid
 title: page list for each book
 ---
-
 {{content}}
-<p>Filter this list by book:</p>
-<ul>
-    {% for page in collections.page %}
-    <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
-    {% endfor %}
+
+<!-- <p>Filter this list by book:</p> DONE-->
+<section class="cf w-100">
+    
+        {% for page in collections.page %}
+        {% if page.data.title == title %}
+        <article class="fl w-100 w-50-m  w-25-ns pr3">
+        <div class="aspect-ratio aspect-ratio--5x7 bt bw2">
+            <a class="dim" href="{{ page.url }}">
+                <img src="{{ page.url }}/{{ page.data.image }}" class="db bg-center cover aspect-ratio--object pt3" />
+            </a>
+        </div>
+        <a href="{{ page.url }}" class="no-underline black" >
+            <h3 class="f5 f4-ns mb0 black-90 pt3">{{ page.data.title }}</h3>
+            <h3 class="f6 f5 fw4 mt1 black-60">{{ page.data.description }}</h3>
+        </a>
+        </article>
+        {% endif %}
+        {% endfor %}
    
-</ul>
+</section>

@@ -1,29 +1,40 @@
 ---
 title: latewerks
 ---
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" href="./css/base.css">
 </head>
 
-<body>
-    <ul>
-        {% for nav in collections.nav %}
-        <li><a href="{{ nav.url }}">{{ nav.data.title }}</a></li>
-        {% endfor %}
-    </ul>
-    {{ content }}
-    <hr />
+<body class="helvetica near-black bg-washed-blue pa3">
+    <header>
+        <nav class="">
+            {% for nav in collections.nav %}
+            <a class="link dim gray f6 f5-ns dib mr3" href="{{ nav.url }}">{{ nav.data.title }}</a>
+            {% endfor %}
+        </nav>
+    </header>
+    <main class="lh-copy">
+        <!-- Current page: <a href="{{ page.url }}">{{ page.url }}</a> -->
+        <h1>{{ title }}</h1>
+        <p>{{ content }}</p>
+    </main>
+    <footer class="bt bw2 pt3">
+        a footer | get content from metadata
+    </footer>
+    <!-- <hr />
     <p style="color: magenta;">This is just to check that all of our pages are showing up.</p>
     <ul>
         {% for post in collections.all %}
         <li><a href="{{ post.url }}">{{ post.url }}</a></li>
         {% endfor %}
-    </ul>
+    </ul> -->
 </body>
 
 </html>
