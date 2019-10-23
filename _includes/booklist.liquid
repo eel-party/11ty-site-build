@@ -6,7 +6,7 @@ title: book list for library page
 {{content}}
 
 <section class="center">
-  <h2 class="fw1 ph0-l">books</h2>
+  <h2 class="f5 f4-ns mb3 black-90">books</h2>
   {% for book in collections.book %}
   <article class="bt bw2">
     <a class="db pv4 ph0-l no-underline black" href="{{ book.url }}">
@@ -16,7 +16,7 @@ title: book list for library page
           <img src="http://mrmrs.github.io/photos/cpu.jpg" class="db" alt="Photo of a dimly lit room with a computer interface terminal.">
         </div>
         <div class="w-100 w-60-ns pl3-ns">
-          <h1 class="f3 fw1 mt0 lh-title">{{ book.data.title }}</h1>
+          <h1 class="f5 f4-ns mt0 black-90">{{ book.data.title }}</h1>
           <p class="f6 f5 fw4 mt2 black-60">{{ book.data.description }}</p>
         </div>
       </div>

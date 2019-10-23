@@ -16,14 +16,18 @@ title: latewerks
     <header>
         <nav class="">
             {% for nav in collections.nav %}
-            <a class="link dim gray    f6 f5-ns dib mr3" href="{{ nav.url }}">{{ nav.data.title }}</a>
+            <a class="link dim gray f6 f5-ns dib mr3" href="{{ nav.url }}">{{ nav.data.title }}</a>
             {% endfor %}
         </nav>
     </header>
     <main class="lh-copy">
+        <!-- Current page: <a href="{{ page.url }}">{{ page.url }}</a> -->
         <h1>{{ title }}</h1>
         <p>{{ content }}</p>
     </main>
+    <footer class="bt bw2 pt3">
+        a footer | get content from metadata
+    </footer>
     <!-- <hr />
     <p style="color: magenta;">This is just to check that all of our pages are showing up.</p>
     <ul>
