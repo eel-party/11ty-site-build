@@ -1,5 +1,7 @@
 // const { DateTime } = require("luxon");
 // const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+// Import fast-glob package
+const fg = require('fast-glob');
 
 module.exports = function(eleventyConfig) {
     // lazy loading on hold - need work around for responsive images/unknown height
@@ -12,7 +14,7 @@ module.exports = function(eleventyConfig) {
     // });
     
     // Find and copy any `jpg` files, maintaining directory structure.
-    eleventyConfig.addPassthroughCopy("*.jpg");
+    eleventyConfig.addPassthroughCopy("library/*.jpg");
     return {
         templateFormats: [
             "md",

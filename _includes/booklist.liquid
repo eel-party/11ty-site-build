@@ -6,21 +6,30 @@ title: book list for library page
 {{content}}
 
 <section class="center lh-copy">
-  <h2 class="near-black f3">{{ title }}</h2>
+
+  <h2 class="near-black f3 normal">{{ title }}</h2>
+
   {% for book in collections.book %}
   <article class="bt bw2">
-    <a href="{{ book.url }}">
-      <div class="flex flex-column flex-row-ns">
-        <div class="dim">
+    <a href="{{ book.url }}" class="">
+      <div class="center dim">
+        <div class="cf">
+          <div class="fl w-100 w-50-ns pv3">
+            
             <!-- replace this with a cover image -->
-          <img src="http://mrmrs.github.io/photos/cpu.jpg" class="db pv3" alt="Photo of a dimly lit room with a computer interface terminal.">
-        </div>
-        <div class="w-100 w-60-ns pl3-ns pt3">
-          <a href="{{ book.url }}" class="near-black f4 db dim">{{ book.data.title }}</a>
-          <a href="{{ book.url }}" class="near-black f6 link">{{ book.data.description }}</a>
+            <img src="{{ book.data.image }}" class="db bg-center cover" />
+
+          <!-- <img src="http://mrmrs.github.io/photos/cpu.jpg" class="db pv3" alt="Photo of a dimly lit room with a computer interface terminal."> -->
+          </div>
+            
+      
+        <div class="fl w-100 w-50-ns pl3">
+          <h1 class="near-black f3 normal underline mb0 db">{{ book.data.title }}</h1>
+          <h2 class="near-black f4 normal mt0 pt0">{{ book.data.description }}</h2>
         </div>
       </div>
     </a>
   </article>
  {% endfor %}
 </section>
+
