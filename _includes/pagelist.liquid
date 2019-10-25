@@ -4,7 +4,6 @@ title: page list for each book
 ---
 {{content}}
 
-<!-- <p>Filter this list by book:</p> DONE-->
 <section class="cf w-100">
     
         {% for page in collections.page %}
@@ -12,7 +11,7 @@ title: page list for each book
         <article class="fl w-100 w-50-m  w-25-ns pr3">
         <div class="bt bw2">
             <a class="dim" href="{{ page.url }}">
-                <img src="{{ page.url }}/{{ page.data.image }}" class="pv3  bg-center cover" />
+                <img src="{{ page.url }}/{{ page.data.image }}" class="pv3 bg-center cover" />
             </a>
         </div>
         <div class="mt0 pt0">
