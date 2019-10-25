@@ -5,19 +5,19 @@ title: book list for library page
 
 {{content}}
 
-<section class="center">
-  <h2 class="f5 f4-ns mb3 black-90">books</h2>
+<section class="center lh-copy">
+  <h2 class="near-black f3">{{ title }}</h2>
   {% for book in collections.book %}
   <article class="bt bw2">
-    <a class="db pv4 ph0-l no-underline black" href="{{ book.url }}">
+    <a href="{{ book.url }}">
       <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns dim">
+        <div class="dim">
             <!-- replace this with a cover image -->
-          <img src="http://mrmrs.github.io/photos/cpu.jpg" class="db" alt="Photo of a dimly lit room with a computer interface terminal.">
+          <img src="http://mrmrs.github.io/photos/cpu.jpg" class="db pv3" alt="Photo of a dimly lit room with a computer interface terminal.">
         </div>
-        <div class="w-100 w-60-ns pl3-ns">
-          <h1 class="f5 f4-ns mt0 black-90">{{ book.data.title }}</h1>
-          <p class="f6 f5 fw4 mt2 black-60">{{ book.data.description }}</p>
+        <div class="w-100 w-60-ns pl3-ns pt3">
+          <a href="{{ book.url }}" class="near-black f4 db dim">{{ book.data.title }}</a>
+          <a href="{{ book.url }}" class="near-black f6 link">{{ book.data.description }}</a>
         </div>
       </div>
     </a>

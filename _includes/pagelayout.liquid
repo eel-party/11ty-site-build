@@ -4,30 +4,30 @@ title: page layout
 ---
 <!-- <li><a href="previousPageHref">lonk</a></li> -->
 <!-- I keep referring to https://www.11ty.io/docs/pagination/ but so far have not had much luck -->
-
 <!-- fix responsive -->
 <section>
+    {{ content }}
     <article class="cf">
         <header class="fl w-30 pt0 mt0 pr4">
-            <h1 class="bt bw2 pt3">
+            <h1 class="bt bw2 f3 mv0 pv3">
                 {{ description }}
             </h1>
             <h2>
                 {{ tags }}
             </h2>
-            <time class="gray">{{ date }}</time>
+            <time class="f6 gray">{{ date }}</time>
+            <!-- <time class="postlist-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time> -->
+
             {% for book in collections.book %}
             {% if book.data.title == title %}
-            <a href="{{ book.url }}" class="no-underline black">
+            <a href="{{ book.url }}" class="dim near-black">
                 <p>&#8592; back to {{ book.data.title }}</p>
             </a>
             {% endif %}
             {% endfor %}
         </header>
         <div class="fl w-70">
-            <p class="pt2">
-                <img src="{{ image }}" />
-            </p>
+            <img src="{{ image }}" />
             <p>
                 {{ content }}
             </p>

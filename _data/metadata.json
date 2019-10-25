@@ -1,0 +1,16 @@
+{
+  "title": "latewerks",
+  "url": "https://latewerks.com/",
+  "description": "portfolio and sketchbook library",
+  "feed": {
+    "subtitle": "portfolio and sketchbook library",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://latewerks.com/feed/feed.xml",
+    "id": "https://latewerks.com/"
+  },
+  "author": {
+    "name": "Lee Ely",
+    "email": "youremailaddress@example.com"
+  }
+}
