@@ -7,26 +7,25 @@ title: latewerks
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ title }}</title>
+    <title>{{ metadata.title }}</title>
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
     <!-- <link rel="stylesheet" href="./css/base.css"> -->
 </head>
 
-<body class="helvetica near-black bg-washed-blue pa3">
+<body class="helvetica near-black bg-washed-blue pa3 lh-copy">
     <header>
-        <nav class="">
+        <nav class="tr f4">
             {% for nav in collections.nav %}
-            <a class="link dim gray f6 f5-ns dib mr3" href="{{ nav.url }}">{{ nav.data.title }}</a>
+            <a class="pl3 near-black dim" href="{{ nav.url }}">{{ nav.data.title }}</a>
             {% endfor %}
         </nav>
     </header>
-    <main class="lh-copy">
-        <!-- Current page: <a href="{{ page.url }}">{{ page.url }}</a> -->
-        <h1>{{ title }}</h1>
+    <main>
+        <a class="f1 near-black dim" href={{ "/" }} >{{ metadata.title }}</a>
         <p>{{ content }}</p>
     </main>
-    <footer class="bt bw2 pt3">
-        <p class="gray">a footer | get content from metadata | made with 11ty & tachyons</p>
+    <footer class="bt bw2">
+        <p class="near-black">&copy; {{ metadata.title }} | {{ metadata.description }} | made with <a href="https://www.11ty.io/" class=" dim near-black">11ty</a> & <a href="http://tachyons.io/" class=" dim near-black">tachyons</a></p>
     </footer>
     <!-- <hr />
     <p style="color: magenta;">This is just to check that all of our pages are showing up.</p>
