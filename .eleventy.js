@@ -17,6 +17,8 @@ module.exports = function(eleventyConfig) {
     
     // Find and copy any `jpg` files, maintaining directory structure.
     eleventyConfig.addPassthroughCopy("library/*.jpg");
+    eleventyConfig.addPassthroughCopy("library/**/*.jpg");
+
     eleventyConfig.addCollection("library", function(collection) {
     return bookImages;
   });
