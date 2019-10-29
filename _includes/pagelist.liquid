@@ -7,17 +7,16 @@ title: page list for each book
 <section class="cf w-100">
     
         {% for page in collections.page %}
-        {% if page.data.title == title %}
+        {% if page.data.book == book %}
         <article class="fl w-100 w-50-m  w-25-ns pr3">
         <div class="bt bw2">
             <a class="dim" href="{{ page.url }}">
-                <!-- currently looking for image in sketchbook folder, which seems preferable -->
                 <img src="../_img/{{ page.data.image }}" class="pv3 bg-center cover" />
             </a>
         </div>
         <div class="mt0 pt0">
-            <a href="{{ page.url }}" class="near-black dim">{{ page.data.description }}</a>
-            <p class="f6 mt0 gray" >{{ page.data.date }}</p>
+            <a href="{{ page.url }}" class="near-black dim">{{ page.data.title }}</a>
+            <p class="f6 mt1 gray" >{{ page.data.description }}</p>
 
         </div>
         </article>

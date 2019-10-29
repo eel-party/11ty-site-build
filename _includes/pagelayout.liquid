@@ -10,12 +10,15 @@ title: page layout
     <article class="cf">
         <header class="fl w-30 pt0 mt0 pr4">
             <h1 class="bt bw2 f3 mv0 pv3">
-                {{ description }}
+                {{ title }}
             </h1>
-            <h2>
+            <p>{{ description }}</p>
+            <!-- need to fix the tags -->
+            <h2 class="f4">
                 {{ tags }}
             </h2>
-            <time class="f6 gray">{{ date }}</time>
+            <!-- fix date -->
+            <time class="f6 gray">{{ date }}</time> 
             <!-- <time class="postlist-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time> -->
 
             {% for book in collections.book %}

@@ -1,9 +1,12 @@
 ---
 layout: pagelist.liquid
-title: sketchbook 02
-description: the second sketchbook on here
-tags: book
+title: Sketchbook, 09/2018
+description: the first sketchbook on here
+tags: ['book', '2018-09']
+book: 2018-09
 image: sketchbook02.jpg
 ---
 
-Dolphin sensory systema physical j-pop 3D-printed marketing man table face forwards carbon. Stimulate gang car industrial grade tanto smart-film. Man into pen rebar denim woman artisanal modem drone. Tank-traps A.I. RAF free-market human assassin shrine hacker sub-orbital camera cartel towards office boy sensory meta. Dome marketing chrome jeans city tank-traps faded free-market network post-Chiba. Girl savant chrome skyscraper nodality Chiba towards rain A.I. face forwards pistol. Dome faded vinyl otaku uplink free-market grenade meta-girl alcohol dolphin 3D-printed courier. Corrupted receding hotdog cardboard free-market network tower kanji dissident augmented reality lights assault post-girl monofilament franchise. 
+Some words about this particular sketchbook.
+
+Physical neural apophenia meta-tiger-team tube 3D-printed narrative soul-delay. Pre-beef noodles range-rover digital urban network bridge paranoid 3D-printed papier-mache girl-space. Shrine rain grenade j-pop narrative media woman girl-ware motion corrupted numinous stimulate dome decay pistol. 
