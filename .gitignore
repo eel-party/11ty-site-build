@@ -1,6 +1,7 @@
 # Files and folders to ignore #
 ###############################
 node_modules/
+_site/
 
 # Compiled source #
 ###################
