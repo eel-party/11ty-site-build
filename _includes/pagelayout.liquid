@@ -2,38 +2,40 @@
 layout: layout.liquid
 title: page layout
 ---
-<!-- <li><a href="previousPageHref">lonk</a></li> -->
-<!-- I keep referring to https://www.11ty.io/docs/pagination/ but so far have not had much luck -->
-<!-- fix responsive -->
+<!-- responsive not working in chrome -->
+<!-- tachyons "-m" is important -->
 <section>
     {{ content }}
-    <article class="cf">
-        <header class="fl w-30 pt0 mt0 pr4">
-            <h1 class="bt bw2 f3 mv0 pv3">
-                {{ title }}
-            </h1>
-            <p>{{ description }}</p>
-            <!-- need to fix the tags -->
-            <h2 class="f4">
-                {{ tags }}
-            </h2>
-            <!-- fix date -->
-            <time class="f6 gray">{{ date }}</time> 
-            <!-- <time class="postlist-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time> -->
+    <article class="mw9 center ph0-ns">
+        <div class="cf ph0-ns">
+            <div class="fl w-100 w-50-ns pr3-m">
+                <div class="bt bw2 pv1">
+                    <h2>
+                        {{ title }}
+                    </h2>
+                    <p>{{ description }}</p>
 
-            {% for book in collections.book %}
-            {% if book.data.title == title %}
-            <a href="{{ book.url }}" class="dim near-black">
-                <p>&#8592; back to {{ book.data.title }}</p>
-            </a>
-            {% endif %}
-            {% endfor %}
-        </header>
-        <div class="fl w-70">
-            <img src="../_img/{{ image }}" alt="{{ description }}"/>
-            <p>
-                {{ content }}
-            </p>
+                    <!-- doing this wrong -->
+                    <!-- <ul>
+                        {% for page in collections.page %}
+                        <li>{{ page.data.tags }}</li>
+                        {% endfor %}
+                    </ul> -->
+                    <!-- not showing up, possibly due to lack of pages -->
+                    <!-- {% for book in collections.book %}
+                    {% if book.data.title == title %}
+                    <a href="{{ book.url }}" class="dim near-black">
+                        <p>&#8592; back to {{ book.data.title }}</p>
+                    </a>
+                    {% endif %}
+                    {% endfor %} -->
+                </div>
+            </div>
+            <div class="fl w-100 w-50-ns">
+                <div class="pv0">
+                    <img src="../_img/{{ image }}" alt="{{ description }}" />
+                </div>
+            </div>
         </div>
     </article>
 </section>

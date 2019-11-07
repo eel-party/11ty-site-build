@@ -8,7 +8,7 @@ title: page list for each book
     
         {% for page in collections.page %}
         {% if page.data.book == book %}
-        <article class="fl w-100 w-50-m  w-25-ns pr3">
+        <article class="fl w-100 w-50-m w-25-ns pr3">
         <div class="bt bw2">
             <a class="dim" href="{{ page.url }}">
                 <img src="../_img/{{ page.data.image }}" class="pv3 bg-center cover" alt="{{ page.data.description }}" />
