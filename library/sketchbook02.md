@@ -1,7 +1,7 @@
 ---
 layout: pagelist.liquid
 title: Sketchbook, 09/2018
-description: the first sketchbook on here
+description: the next sketchbook on here
 tags: 
     - book
 key: 2018-09

@@ -4,4 +4,14 @@ title: about
 tags: nav
 ---
 
-Sprawl media refrigerator drone sunglasses systemic film realism neural receding concrete render-farm. Wristwatch-ware hacker paranoid Tokyo bomb tattoo singularity into camera tank-traps rain monofilament tube euro-pop garage boy. Systema Legba spook shoes fluidity boy table tower tank-traps courier nano-Kowloon cyber-film neon euro-pop. Warehouse Chiba human industrial grade dolphin gang San Francisco footage paranoid dissident. Plastic weathered Legba Chiba semiotics refrigerator pen bicycle neon realism stimulate tower disposable. 
+Code dabbler, pixel pusher, problem solver.
+
+[list of social media and stores here]
+<ul>
+<li>instagram</li>
+<li>twitter</li>
+<li>society6</li>
+<li>redbubble</li>
+<li>teepublic</li>
+<li>etc.</li>
+</ul>

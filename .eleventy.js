@@ -19,6 +19,19 @@ module.exports = function(eleventyConfig) {
 
     // Find and copy any `jpg` files, maintaining directory structure.
     eleventyConfig.addPassthroughCopy("library/_img/*.jpg");
+
+    
+  // Get the first `n` elements of a collection.
+  eleventyConfig.addFilter("head", (array, n) => {
+    if( n < 0 ) {
+      return array.slice(n);
+    }
+
+    return array.slice(0, n);
+  });
+
+
+    eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
     // eleventyConfig.addCollection("library", function(collection) {
     // return bookImages;
     // });
