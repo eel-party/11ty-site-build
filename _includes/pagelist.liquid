@@ -7,7 +7,7 @@ title: page list for each book
 <section class="cf w-100">
     
         {% for page in collections.page %}
-        {% if page.data.book == book %}
+        {% if page.data.key == key %}
         <article class="fl w-100 w-50-m w-25-ns pr3">
         <div class="bt bw2">
             <a class="dim" href="{{ page.url }}">

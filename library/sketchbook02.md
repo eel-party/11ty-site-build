@@ -2,8 +2,9 @@
 layout: pagelist.liquid
 title: Sketchbook, 09/2018
 description: the first sketchbook on here
-tags: ['book', '2018-09']
-book: 2018-09
+tags: 
+    - book
+key: 2018-09
 image: sketchbook02.jpg
 ---
 
