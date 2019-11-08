@@ -2,35 +2,38 @@
 layout: layout.liquid
 title: page layout
 ---
-<!-- <li><a href="previousPageHref">lonk</a></li> -->
-<!-- I keep referring to https://www.11ty.io/docs/pagination/ but so far have not had much luck -->
-<!-- fix responsive -->
+<!-- responsive not working in chrome -->
+<!-- tachyons "-m" is important -->
 <section>
     {{ content }}
-    <article class="cf">
-        <header class="fl w-30 pt0 mt0 pr4">
-            <h1 class="bt bw2 f3 mv0 pv3">
-                {{ description }}
-            </h1>
-            <h2>
-                {{ tags }}
-            </h2>
-            <time class="f6 gray">{{ date }}</time>
-            <!-- <time class="postlist-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time> -->
+    <article class="mw9 center ph0-ns">
+        <div class="cf ph0-ns">
+            <div class="fl w-100 w-50-ns pr3-m">
+                <div class="bt bw2 pv1">
+                    <h2>
+                        {{ title }}
+                    </h2>
+                    <p>{{ description }}</p>
+                    {% for book in collections.book %}
+                    {% if book.data.key == key %}
+                    <span>
+                        &larr;
+                        <a class="dim near-black" href="{{ book.url }}">
+                            back to {{ book.data.title }}
+                        </a>
+                    </span>
+                    {% endif %}
+                    {% endfor %}
+                    <p>{{ tags }}</p>
 
-            {% for book in collections.book %}
-            {% if book.data.title == title %}
-            <a href="{{ book.url }}" class="dim near-black">
-                <p>&#8592; back to {{ book.data.title }}</p>
-            </a>
-            {% endif %}
-            {% endfor %}
-        </header>
-        <div class="fl w-70">
-            <img src="../_img/{{ image }}" />
-            <p>
-                {{ content }}
-            </p>
+                </div>
+            </div>
+            <div class="fl w-100 w-50-ns">
+                <div class="pv0">
+                    <img src="../_img/{{ image }}" alt="{{ description }}" />
+                </div>
+            </div>
         </div>
     </article>
 </section>
+<!--  -->

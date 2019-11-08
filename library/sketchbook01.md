@@ -1,9 +1,13 @@
 ---
 layout: pagelist.liquid
-title: sketchbook 01
+title: Sketchbook, 02/2017 - 08/2017
 description: the first sketchbook on here
-tags: book
+tags: 
+    - book
+key: 2017-02
 image: sketchbook01.jpg
 ---
 
-Dolphin sensory systema physical j-pop 3D-printed marketing man table face forwards carbon. Stimulate gang car industrial grade tanto smart-film. Man into pen rebar denim woman artisanal modem drone. Tank-traps A.I. RAF free-market human assassin shrine hacker sub-orbital camera cartel towards office boy sensory meta. Dome marketing chrome jeans city tank-traps faded free-market network post-Chiba. Girl savant chrome skyscraper nodality Chiba towards rain A.I. face forwards pistol. Dome faded vinyl otaku uplink free-market grenade meta-girl alcohol dolphin 3D-printed courier. Corrupted receding hotdog cardboard free-market network tower kanji dissident augmented reality lights assault post-girl monofilament franchise. 
+Some words about this particular sketchbook.
+
+Shanty town Kowloon media bridge systema Chiba dome. Otaku rebar corrupted dolphin boat denim advert savant face forwards-ware sprawl marketing physical spook decay vinyl. DIY footage order-flow sub-orbital paranoid hotdog denim augmented reality A.I. j-pop dead numinous Tokyo camera film urban city. Hacker cyber-dome corrupted towards Shibuya into media rebar apophenia dead shrine concrete man silent. 

@@ -17,15 +17,16 @@ title: book list for library page
           <div class="fl w-100 w-50-ns pv3">
             
             <!-- replace this with a cover image -->
-            <img src="_img/{{ book.data.image }}" class="db bg-center cover" />
+            <img src="_img/{{ book.data.image }}" class="db bg-center cover" alt="{{ book.data.description }}"/>
 
-          <!-- <img src="http://mrmrs.github.io/photos/cpu.jpg" class="db pv3" alt="Photo of a dimly lit room with a computer interface terminal."> -->
+
           </div>
             
       
-        <div class="fl w-100 w-50-ns pl3">
-          <h1 class="near-black f3 normal underline mb0 db">{{ book.data.title }}</h1>
-          <h2 class="near-black f4 normal mt0 pt0">{{ book.data.description }}</h2>
+        <div class="fl w-100 w-50-ns pl3 near-black">
+          <h1 class="f3 normal underline mb0 db">{{ book.data.title }}</h1>
+          <h2 class="f4 normal mt0 pt0">{{ book.data.description }}</h2>
+          <!-- <p class="lh-copy">{{ book.data.content }}</p> -->
         </div>
       </div>
     </a>

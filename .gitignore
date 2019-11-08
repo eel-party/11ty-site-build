@@ -2,6 +2,7 @@
 ###############################
 node_modules/
 _site/
+library/_img/
 
 # Compiled source #
 ###################
